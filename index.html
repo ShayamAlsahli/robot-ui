@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/main.css" rel="stylesheet" />
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <h1>Welcome to the robot dashboard</h1>
+  <form name="motor" method="POST" action="motor.php">
+    <div class="slidecontainer">
+      <label>Motor 1 </label>
+      <input type="range" min="0" max="180" value="90" class="slider" id="motor1" name="motor1"
+        oninput="onMotorChange('motor1')">
+      <span class="motorValue">90</span>
+    </div>
+    <div class="slidecontainer">
+      <label>Motor 2 </label>
+      <input type="range" min="0" max="180" value="90" class="slider" id="motor2" name="motor2"
+        oninput="onMotorChange('motor2')">
+      <span class="motorValue">90</span>
+    </div>
+    <div class="slidecontainer">
+      <label>Motor 3 </label>
+      <input type="range" min="0" max="180" value="90" class="slider" id="motor3" name="motor3"
+        oninput="onMotorChange('motor3')">
+      <span class="motorValue">90</span>
+    </div>
+    <div class="slidecontainer">
+      <label>Motor 4 </label>
+      <input type="range" min="0" max="180" value="90" class="slider" id="motor4" name="motor4"
+        oninput="onMotorChange('motor4')">
+      <span class="motorValue">90</span>
+    </div>
+    <div class="slidecontainer">
+      <label>Motor 5 </label>
+      <input type="range" min="0" max="180" value="90" class="slider" id="motor5" name="motor5"
+        oninput="onMotorChange('motor5')">
+      <span class="motorValue">90</span>
+    </div>
+    <div class="slidecontainer">
+      <label>Motor 6 </label>
+      <input type="range" min="0" max="180" value="90" class="slider" id="motor6" name="motor6"
+        oninput="onMotorChange('motor6')">
+      <span class="motorValue">90</span>
+    </div>
+    <div class="form-buttons">
+      <input type="submit" name="submit" value="Submit" />
+      <button type="button" name="start">
+        Start
+      </button>
+    </div>
+  </form>
+</body>
+
+</html>
